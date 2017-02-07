@@ -92,7 +92,7 @@ function multiply(num1,num2){
 	return num1 * num2
 
 }
-var product = multiply (bango1,bango2);
+var product = multiply(bango1,bango2);
 console.log(product);
 
 
@@ -166,7 +166,7 @@ console.log(Difference);
  * Console.log your result.  
 */
 function checkProduct(){
-	return sum * product
+	return addSum * product
 }
 console.log(checkProduct());
 
@@ -270,7 +270,10 @@ function shoeSize(inches){
  * Example input: "believe you can and you're halfway there."
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
- 
+function allCaps(str){
+	return str.toUpperCase();
+}
+console.log(allCaps("believe you can and you're half way there."));
 
 
 /*
@@ -280,7 +283,10 @@ function shoeSize(inches){
  * This function will capitalize only the first letter in the variable phase above. 
  * Console.log your result.
 */
-
+function oneCap(str){
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+console.log(oneCap("believe you can and you're half way there."));
 
 
 /*
@@ -293,7 +299,15 @@ function shoeSize(inches){
  * Call this function and pass in a number value.
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
-
+function verifyDrinkingAge(age){
+	if (age < 21){
+		return true
+	}else{
+		return false
+	}
+}
+var canDrink = verifyDrinkingAge(2);
+console.log(canDrink);
 
 
 /**
@@ -301,7 +315,15 @@ function shoeSize(inches){
  * Function - throwParty
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
-
+function throwParty(party){
+	if (canDrink){
+		return "Chee Hoo! We going to da party!"
+	}else{
+		return "Meh. See you at Starbucks."
+	}
+}
+var canParty = throwParty(10);
+console.log(canParty);
 
 
 
