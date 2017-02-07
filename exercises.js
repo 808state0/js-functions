@@ -184,6 +184,35 @@ function checkQuotient(){
 	return product * quotient
 }
 console.log(checkQuotient());
+
+
+ /* #10
+ * Function - addThenSubtract
+ * Declare three variables
+ *
+ *   @variable Datatype: Number `bango3`
+ *   @variable Datatype: Number `bango4`
+ *   @variable Datatype: Number `bango5`
+ *   
+ * Next, create a function named addThenSubtract which takes three parameters: `num1`, `num2`, `num3`.
+ *
+ *    @param Datatype: Number `num1`
+ *    @param Datatype: Number `num2`
+ *    @param Datatype: Number `num3`
+ *    @return Datatype: Number
+ *
+ * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
+ * Console.log your result.
+*/ 
+var bango3 = 10;
+var bango4 = 20;
+var bango5 = 50;
+
+function addThenSubract(num1,num2,num3){
+	return (num1 + num2) - num3;
+}
+console.log(addThenSubract(bango3,bango4,bango5));
+
 /*
  * #11
  * Function - multiplyThenDivide
@@ -200,7 +229,7 @@ console.log(checkQuotient());
 function multiplyThenDivide(num1,num2,num3){
 	return (num1 * num2) / num3
 }
-console.log(multiplyThenDivide(10,20,30));
+console.log(multiplyThenDivide(bango3,bango4,bango5));
 
 
 /*
@@ -301,9 +330,9 @@ console.log(oneCap("believe you can and you're half way there."));
  */
 function verifyDrinkingAge(age){
 	if (age < 21){
-		return true
+		return true;
 	}else{
-		return false
+		return false;
 	}
 }
 var canDrink = verifyDrinkingAge(2);
@@ -316,10 +345,10 @@ console.log(canDrink);
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
 function throwParty(party){
-	if (canDrink){
-		return "Chee Hoo! We going to da party!"
+	if (canDrink === party){
+		return "Chee Hoo! We going to da party!";
 	}else{
-		return "Meh. See you at Starbucks."
+		return "Meh. See you at Starbucks.";
 	}
 }
 var canParty = throwParty(10);
